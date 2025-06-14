@@ -1,0 +1,15 @@
+pre-commit:
+  parallel: true
+  commands:
+    biome-check:
+      skip:
+        - merge
+      glob: "*.{js,ts,jsx,tsx,astro,d.ts}"
+      run: pnpm @biomejs/biome check --write {staged_files}
+    test:
+      run: pnpm test
+    build:
+      run: pnpm build
+
+pre-push:
+
