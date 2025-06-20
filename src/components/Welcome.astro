@@ -1,26 +1,7 @@
 ---
 import { CreateBloomGraph } from "@/components/CreateGraph";
-import { getRandomTree } from "@/lib/getRandomInt";
-import ForceGraph2D from "react-force-graph-2d";
-import ForceGraph3D from "react-force-graph-3d";
-import astroLogo from "../assets/astro.svg";
-import background from "../assets/background.svg";
 ---
 
 <div>
-  <!-- <ForceGraph3D
-    client:only="react"
-    graphData={getRandomTree()}
-    nodeLabel="id"
-    linkWidth={3}
-    linkColor="#6C757D"
-    linkDirectionalParticles={0}
-    enableNodeDrag={false}
-    enablePointerInteraction={false}
-    nodeColor={() => {
-      return "skyblue";
-    }}
-    nodeRelSize={4}
-  /> -->
   <CreateBloomGraph client:only="react" />
 </div>
